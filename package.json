@@ -1,0 +1,33 @@
+{
+  "name": "auto_changelog_example",
+  "version": "1.0.0",
+  "description": "- Init package // Add package json, lib neccessary - Get all commits in project // Get all commits from git log command - Get origin information // Get remote origin information for create github link - Filter commits by specify type (from commit rule) // Extract all commits to Added, Fixed, Changed, Removed types - Define data changelog // Define changelogObject contains all information for export changlog - Export to CHANGELOG.md // Export CHANGELOG.md example from changelogObject",
+  "main": "src/index.js",
+  "bin": {
+    "generate-changelog": "./lib/index.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "babel src -d lib"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dogiadat/auto_changelog_example.git"
+  },
+  "author": "dogiadat",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dogiadat/auto_changelog_example/issues"
+  },
+  "homepage": "https://github.com/dogiadat/auto_changelog_example#readme",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-stage-0": "^6.24.1"
+  },
+  "dependencies": {
+    "commander": "^2.19.0",
+    "parse-github-url": "^1.0.2"
+  }
+}
