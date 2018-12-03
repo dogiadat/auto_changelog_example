@@ -6,3 +6,13 @@
 - Filter commits by specify type (from commit rule) // Extract all commits to Added, Fixed, Changed, Removed types
 - Define data changelog // Define changelogObject contains all information for export changlog
 - Export to CHANGELOG.md // Export CHANGELOG.md example from changelogObject
+## Installation
+From project root, run:
+  ```
+  npm install
+  ```
+Run npm package:
+  ```
+  npm run build
+  node lib/index.js
+  ```
